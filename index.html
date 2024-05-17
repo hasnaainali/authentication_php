@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact List</title>
+</head>
+
+<body>
+    <h1>Contact List</h1>
+    <form action="read.php" method="post">
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id"><br>
+        <input type="submit" value="Read">
+    </form>
+
+
+    <h1>Contact List</h1>
+    <form action="create.php" method="post">
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id"><br> <!-- Add an input field for ID -->
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" required><br>
+
+        <input type="submit" value="Add Contact">
+    </form>
+
+    <h2>Update Contact</h2>
+    <form action="update.php" method="post">
+        <label for="id">ID:</label>
+        <input type="number" name="id" id="id" required><br>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" required><br>
+
+        <input type="submit" name="contact" value="Update Contact">
+    </form>
+
+    <h2>Delete Contact</h2>
+    <form action="delete.php" method="post">
+        <label for="id">ID:</label>
+        <input type="number" name="id" id="id" required><br>
+
+        <input type="submit" name="delete_contact" value="Delete Contact">
+    </form>
+</body>
+
+</html>
